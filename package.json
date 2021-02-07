@@ -1,0 +1,67 @@
+{
+  "name": "react-client-spacex-api",
+  "version": "0.1.0",
+  "description": "React.js project, using the SpaceX-API via a custom local server.",
+  "main": "index.js",
+  "private": true,
+  "license": "MIT",
+  "keywords": [
+    "SpaceX, API, React"
+  ],
+  "author": {
+    "name": "Iwaylo Nakov",
+    "email": "ivonakov@gmail.com",
+    "url": "https://ivonakov.info"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ivonakov/spacex.git"
+  },
+  "scripts": {
+    "start": "run-p server client",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server": "node server.js",
+    "client": "react-scripts start"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.2",
+    "web-vitals": "^1.1.0",
+    "react-bootstrap": "^1.4.3"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.6.3",
+    "npm-run-all": "^4.1.5"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "engines": {
+    "node": ">= 10.0.0",
+    "npm": ">= 6.0.0",
+    "yarn": "^1.14.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not ie <= 8",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
